@@ -1,0 +1,17 @@
+/* custom-tree.css */
+
+.node__root > circle {
+  fill: rgb(var(--primary));
+}
+
+.node__branch > circle {
+  fill: rgb(var(--secondary));
+}
+
+.rd3t-label__title {
+  fill: rgb(var(--foreground)) !important;
+}
+
+.rd3t-link {
+  stroke: rgb(var(--muted-foreground)) !important;
+}

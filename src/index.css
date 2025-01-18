@@ -1,0 +1,41 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --background: 23 23 23;
+    --foreground: 225 231 239;
+    --muted: 15 22 41;
+    --muted-foreground: 127 142 163;
+    --accent: 29 40 58;
+    --accent-foreground: 248 250 252;
+    --popover: 3 7 17;
+    --popover-foreground: 148 163 184;
+    --border: 29 40 58;
+    --input: 29 40 58;
+    --card: 3 7 17;
+    --card-foreground: 225 231 239;
+    --primary: 21 112 239;
+    --primary-foreground: 2 2 5;
+    --secondary: 132 202 255;
+    --secondary-foreground: 248 250 252;
+    --destructive: 233 74 74;
+    --destructive-foreground: 248 250 252;
+    --ring: 29 40 58;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+  body {
+    @apply font-sans antialiased bg-background text-foreground h-screen;
+  }
+  #root {
+    @apply h-full;
+  }
+}
